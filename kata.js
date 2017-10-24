@@ -3,6 +3,8 @@ export default class Kata {
     var ary = []
     if (number === undefined) {
       return 0;
+    } else if( typeof number !== 'number') {
+      throw new Error('You must pass a number')
     } else {
       for(var i = 1; i <= number; i++){
         ary.push(i)
