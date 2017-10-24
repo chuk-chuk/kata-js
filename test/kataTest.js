@@ -11,7 +11,11 @@ describe("Kata", () => {
      expect(kata.summation()).to.equal(0);
    })
 
-   it('it should return 1 when passed 1', () => {
+   it('should return 1 when passed 1', () => {
      expect(kata.summation(1)).to.equal(1);
+   })
+
+   it("should return 3 when passed 2", () => {
+     expect(kata.summation(2)).to.equal(3);
    })
 })
