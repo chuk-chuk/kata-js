@@ -18,4 +18,8 @@ describe("Kata", () => {
    it("should return 3 when passed 2", () => {
      expect(kata.summation(2)).to.equal(3);
    })
+
+   it("should return 15 when passed 5", () => {
+     expect(kata.summation(5)).to.equal(15);
+   })
 })
