@@ -1,5 +1,7 @@
 export default class Kata {
-  summation(number){
-    return 1;
+  summation (number) {
+    if (number === undefined) {
+      return 0;
+    }
   }
 }

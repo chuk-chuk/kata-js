@@ -7,13 +7,7 @@ describe("Kata", () => {
      kata = new Kata()
    });
 
-  it('returns one if length is less than two', () => {
-    expect(kata.summation(1)).to.equal(1)
-  })
-
-  it('always should be an integer', () => {
-    expect(kata.summation(1)).to.be.a( 'number' );
-  })
-
-
+   it("should return 0 when passed nothing", () => {
+     expect(kata.summation()).to.equal(0);
+   })
 })
