@@ -23,7 +23,11 @@ describe("Kata", () => {
      expect(kata.summation(5)).to.equal(15);
    })
 
-   it('should return an error if passed a string', () => {
+   it('should throw an error if passed a string', () => {
      expect(() => kata.summation('hello').to.throw('You must pass a number'));
+   })
+
+   it('should throw an error if passed a float', () => {
+     expect(() => kata.summation(1.33).to.throw('You must pass a number'));
    })
 })
