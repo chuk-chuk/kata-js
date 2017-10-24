@@ -10,4 +10,8 @@ describe("Kata", () => {
    it("should return 0 when passed nothing", () => {
      expect(kata.summation()).to.equal(0);
    })
+
+   it('it should return 1 when passed 1', () => {
+     expect(kata.summation(1)).to.equal(1);
+   })
 })
